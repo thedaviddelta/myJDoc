@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "myJDoc",
+    "description": "Extension for automatically changing to a selected JavaDocs version",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": ["*://docs.oracle.com/*"],           
+            "js": ["main.js"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "index.html",
+        "default_title": "myJDoc",
+        "default_icon": {
+            "128": "icon.png"
+        }
+    },
+    "permissions": ["storage"],
+    "icons": {
+        "128": "icon.png"
+    }
+}
