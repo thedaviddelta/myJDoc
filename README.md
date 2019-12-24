@@ -1,6 +1,6 @@
 # <img src="icon.png" width="26"> **myJDoc**
 
-![Version](https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000)
+![Version](https://img.shields.io/badge/version-1.1-blue.svg?cacheSeconds=2592000)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 > Extension for automatically changing to a selected JavaDocs version
@@ -12,9 +12,12 @@
 
 ## ✨ How does it work?
 
-This extension automatically changes JavaDocs to a selected version from every other one (defaults to 8).
+This extension automatically changes JavaDocs to a selected version from every other one.
++ For JavaSE, version defaults to 8, and conversion to 11+ only works from 11+.
++ For JavaEE, selecting versions over current max (7) automatically redirect to 7.
++ For JavaFX, 11+ versions (out of Oracle docs) aren't supported.
 
-It makes use of a small window for selecting the prefered version and for turning the extension on/off. It perfoms the update using some simple JS `replace` functions.
+The addon makes use of a small window for selecting the prefered version and for turning the extension on/off. It perfoms the update using some simple JS `replace` functions.
 
 
 ## 📝 License

@@ -4,15 +4,15 @@ const save = document.getElementById("save");
 const info = document.getElementById("info");
 const sw = document.getElementById("switch");
 
-chrome.storage.sync.get(["ver", "off"], data => {
-    opts.value = data.ver || 8;
+chrome.storage.sync.get(["ver", "off"], ({ver = 8, off}) => {
+    opts.value = ver;
     
-    sw.className = data.off ? "off" : "on";
-    sw.innerText = data.off ? "Turn on" : "Turn off";
+    sw.className = off ? "off" : "on";
+    sw.innerText = off ? "Turn on" : "Turn off";
     chrome.browserAction.setIcon({
-        "path": data.off ? "icon_gray.png" : "icon.png"
+        "path": off ? "icon_gray.png" : "icon.png"
     });
-    img.src = data.off ? "banner_gray.png" : "banner.png";
+    img.src = off ? "banner_gray.png" : "banner.png";
 });
 
 opts.addEventListener("change", () => 
