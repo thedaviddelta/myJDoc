@@ -1,6 +1,6 @@
 # <img src="icon.png" width="26"> **myJDoc**
 
-![Version](https://img.shields.io/badge/version-1.1-blue.svg?cacheSeconds=2592000)
+![Version](https://img.shields.io/badge/version-1.2-blue.svg?cacheSeconds=2592000)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 > Extension for automatically changing to a selected JavaDocs version
@@ -8,6 +8,7 @@
 #### 🌐 [Chrome](https://chrome.google.com/webstore/detail/myjdoc/jmojmfbhfbpnpgkkbfbhmaghgclenlfb)
 #### 🦊 [Firefox](https://addons.mozilla.org/firefox/addon/myjdoc/)
 #### ⭕ [Opera](https://addons.opera.com/extensions/details/myjdoc/)
+#### 🌊 [Edge](https://microsoftedge.microsoft.com/addons/detail/lbckjgnglclmejkildjjkpphkmlgkdfl)
 
 
 ## ✨ How does it work?
